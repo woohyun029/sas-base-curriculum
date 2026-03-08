@@ -1,0 +1,9 @@
+DATA TEST; /*테이블 TEST 생성함 */
+SET SASHELP.CLASS; /*라이브러리 SASHELP의 CLASS라는 테이블에서 데이터를 불러옴*/
+RUN;
+
+LIBNAME SASTEST "/home/u63652680/my_sas_data";
+
+DATA SASTEST.TEST;
+SET SASHELP.CLASS;
+RUN;
