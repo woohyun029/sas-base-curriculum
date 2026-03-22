@@ -1,36 +1,40 @@
 # 📊 SAS Base Curriculum Study
 
-SAS 기초 문법과 데이터 핸들링 기법을 학습하고 정리한 저장소입니다.  
-SAS OnDemand for Academics 환경에서 실습을 진행하였으며, 기초적인 데이터 입출력부터 SQL 활용까지의 과정을 담고 있습니다.
+SAS 기초 문법부터 데이터 핸들링, SQL 활용까지의 학습 과정을 기록한 저장소입니다.  
+**SAS OnDemand for Academics** 환경에서 실습을 진행하였으며, 각 단계별 핵심 문법을 예제 코드와 함께 정리했습니다.
 
 ---
 
-## 📌 학습 목표
+## 📌 주요 학습 내용
 
-*   **SAS 프로그래밍의 기본 구조**를 완벽하게 이해합니다.
-*   **DATA STEP**을 활용하여 데이터를 자유롭게 가공하고 정제합니다.
-*   **다중 데이터셋 병합** 및 효율적인 **반복 연산** 기술을 습득합니다.
-*   **PROC SQL**을 이용하여 효율적으로 데이터를 조회하고 집계합니다.
+*   **Data Step 기초**: 데이터 읽기(`INPUT`, `INFILE`), 라이브러리 지정(`LIBNAME`), 데이터셋 생성.
+*   **데이터 핸들링**: 변수 제어(`KEEP`, `DROP`), 조건문(`IF-THEN/ELSE`), 반복문(`DO LOOP`).
+*   **데이터 결합**: 수직 결합(`SET`) 및 수평 병합(`MERGE`) 시 발생하는 자료형/길이 충돌 해결.
+*   **PROC SQL**: ANSI SQL 문법을 활용한 데이터 조회, 집계 및 가공 처리.
 
 ---
 
 ## 📂 커리큘럼 및 파일 상세
 
-| 번호 | 파일명 | 주요 학습 내용 |
+제공된 파일의 실제 코드 내용을 바탕으로 구성되었습니다.
+
+| 번호 | 파일명 | 핵심 명령어 및 학습 내용 |
 | :--: | :--- | :--- |
-| **01** | [01_SAS_Overview.sas](./01_SAS_Overview.sas) | SAS 라이브러리 설정 및 프로그램 기본 구조 이해 |
-| **02** | [02_Data_Step_Input.sas](./02_Data_Step_Input.sas) | 외부 데이터 불러오기 (`INFILE`, `INPUT`, `DATALINES`) |
-| **03** | [03_Data_Attributes.sas](./03_Data_Attributes.sas) | 데이터 속성 설정 (`LABEL`, `LENGTH`, 변수명 관리) |
-| **04** | [04_Data_Formats.sas](./04_Data_Formats.sas) | 출력 포맷 지정 및 날짜/숫자 형식 처리 (`FORMAT`, `INFORMAT`) |
-| **05** | [05_Data_Step_Processing.sas](./05_Data_Step_Processing.sas) | 조건문(`IF-THEN/ELSE`) 및 변수 선택(`KEEP`, `DROP`) |
-| **06** | [06_Combining_Datasets.sas](./06_Combining_Datasets.sas) | 데이터셋 수직 결합(`SET`) 및 수평 병합(`MERGE`) |
-| **07** | [07_Loops_and_Output.sas](./07_Loops_and_Output.sas) | 반복문(`DO LOOP`), `ARRAY` 활용 및 다중 결과 생성(`OUTPUT`) |
-| **08** | [08_PROC_SQL_Basics.sas](./08_PROC_SQL_Basics.sas) | SAS 내 SQL 문법 활용 (`SELECT`, `GROUP BY`, `HAVING`, `CALCULATED`) |
+| **01** | [01_SAS_Overview.sas](./01_SAS_Overview.sas) | `DATA`, `SET`, `LIBNAME` (라이브러리 할당 및 데이터셋 복사 기초) |
+| **02** | [02_Data_Step_Input.sas](./02_Data_Step_Input.sas) | `PROC SORT`, `PRINT`, `CONTENTS`, `FREQ` (기초 분석 및 조회용 프로시저) |
+| **03** | [03_Data_Attributes.sas](./03_Data_Attributes.sas) | `INPUT`, `CARDS`, `INFILE` (직접 입력 및 외부 텍스트/CSV 파일 로드) |
+| **04** | [04_Data_Formats.sas](./04_Data_Formats.sas) | `FORMAT`, `LENGTH` (숫자, 문자, 날짜 데이터의 출력 형식 지정) |
+| **05** | [05_Data_Step_Processing.sas](./05_Data_Step_Processing.sas) | `KEEP/DROP`, `IF-THEN/ELSE`, `DELETE` (데이터 필터링 및 산술 연산) |
+| **06** | [06_Combining_Datasets.sas](./06_Combining_Datasets.sas) | `SET`, `MERGE`, `BY` (데이터셋 상하 결합 및 기준 변수 기반 좌우 병합) |
+| **07** | [07_Loops_and_Output.sas](./07_Loops_and_Output.sas) | `DO-END`, `DO WHILE/UNTIL`, `OUTPUT` (반복문 제어 및 결과 행 출력) |
+| **08** | [08_PROC_SQL_Basics.sas](./08_PROC_SQL_Basics.sas) | `SELECT`, `GROUP BY`, `HAVING`, `CALCULATED` (SAS 내 SQL 활용 기법) |
 
 ---
 
-## 🛠 실습 환경
+## 🛠 실습 환경 및 참고 자료
 
 *   **Language**: SAS (Base SAS)
-*   **Tool**: SAS OnDemand for Academics (Cloud)
+*   **Tool**: SAS OnDemand for Academics
 *   **Reference**: [통계분석의 핵심 SAS (WikiDocs)](https://wikidocs.net/book/2678)
+
+---
